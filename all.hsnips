@@ -229,6 +229,9 @@ snippet epsilon "epsilon" i
 \varepsilon
 endsnippet
 
+snippet rho "rho" i
+\rho
+endsnippet
 
 snippet theta "theta" i
 \theta
