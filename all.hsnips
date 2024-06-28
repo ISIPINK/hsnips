@@ -1,0 +1,637 @@
+snippet pythoncomment "python fun comment" i
+"""short description
+
+:param variable_name: explain variable
+:type variable_name: str
+
+:returns: 
+:rtype: 
+"""
+endsnippet
+
+snippet br "enter in markdown" i
+<br>
+endsnippet
+
+snippet aligned "aligned environment" b
+$$
+\begin{aligned}
+$0	
+.
+\end{aligned}
+$$ 
+endsnippet
+
+snippet align "align environment" b
+\begin{align}
+$1	
+\end{align}
+$0
+endsnippet
+
+snippet align* "align environment without numberings" b
+\begin{align*}
+$1	
+\end{align*}
+$0
+endsnippet
+
+
+#latex
+
+snippet inf "infinum" i
+\inf
+endsnippet
+
+snippet sup "supremum" i
+\sup
+endsnippet
+
+snippet congruent "congruent" i
+\cong
+endsnippet
+
+snippet label "label" i
+\label{$0}
+endsnippet
+
+snippet cite "cite" i
+\cite{$0}
+endsnippet
+
+snippet reference "reference" i
+\ref{$0}
+endsnippet
+
+snippet eqreference "reference" i
+(\ref{$0})
+endsnippet
+
+snippet similar "similar" i
+\sim
+endsnippet
+
+snippet quad "quad" i
+\quad 
+endsnippet
+
+snippet mk "inline math" iA
+\$$1\$
+endsnippet
+
+snippet mk "inline math" A
+\$$1\$
+endsnippet
+
+snippet ln "ln" i
+\ln \left($1\right)
+endsnippet
+
+snippet log "log" i
+\log\left($1\right)
+endsnippet
+
+snippet exp "exp" i
+e^{$1}
+endsnippet
+
+snippet tan "tan" i
+\tan\left($1\right)
+endsnippet
+
+snippet sin "sine" i
+\sin\left($1\right)
+endsnippet
+
+snippet cos "cosine" i
+\cos\left($1\right)
+endsnippet
+
+snippet sqrt "square root" i
+\sqrt{$1}
+endsnippet
+
+snippet gradient "gradient" i
+\nabla
+endsnippet
+
+snippet nabla "gradient" i
+\nabla
+endsnippet
+
+snippet partial "partial" i
+\partial
+endsnippet
+
+snippet text "text" i
+\text{$1}
+endsnippet
+
+snippet hat "widehat" i
+\widehat{$1}
+endsnippet
+
+snippet widehat "widehat" i
+\widehat{$1}
+endsnippet
+
+snippet tilde "tilde" i
+\tilde{$1}
+endsnippet
+
+snippet tilde "tilde" i
+\tilde{$1}
+endsnippet
+
+snippet integral "integral" i
+\int_{$1}^{$2} $3
+endsnippet
+
+snippet primitieve "definiteve integral" b
+\int $1 d$2
+endsnippet
+
+snippet dintegral "definiteve integral" b
+\int $1 d$2
+endsnippet
+
+# Greek letters
+
+snippet psi "psi" i
+\psi
+endsnippet
+
+snippet tau "tau" i
+\tau
+endsnippet
+
+snippet pi "pi" i
+\pi
+endsnippet
+
+snippet phi "phi" i
+\phi
+endsnippet
+
+snippet phi "var phi" i
+\varphi
+endsnippet
+
+snippet suu "suu" i
+s_{$0}
+endsnippet
+
+snippet nu "greek nu m" i
+\nu
+endsnippet
+
+snippet mu "greek mu m" i
+\mu
+endsnippet
+
+snippet alpha "alpha" i
+\alpha
+endsnippet
+
+snippet sigma "sigma" i
+\sigma
+endsnippet
+
+snippet omega "Omega, ohm" i
+\Omega
+endsnippet
+
+snippet omega "omega" i
+\omega
+endsnippet
+
+snippet ohm "Omega, ohm" i
+\Omega
+endsnippet
+
+snippet gamma "gamm" i
+\gamma
+endsnippet
+
+snippet Delta "big Delta" i
+\Delta
+endsnippet
+
+snippet delta "big Delta" i
+\Delta
+endsnippet
+
+snippet delta "small delta" i
+\delta
+endsnippet
+
+snippet epsilon "epsilon" i
+\varepsilon
+endsnippet
+
+
+snippet theta "theta" i
+\theta
+endsnippet
+
+snippet beta "beta" i
+\beta
+endsnippet
+
+
+snippet lambda "lambda" i
+\lambda
+endsnippet
+
+######
+
+snippet approx "approx" i
+\approx
+endsnippet
+
+snippet absolute "absolute value" i
+|$1| $2
+endsnippet
+
+snippet inner "inner product" i
+\langle $1 \mid $2 \rangle
+endsnippet
+
+snippet norm "norm notation" i
+||$1||
+endsnippet
+
+snippet implies " Rightarrow" i
+\Rightarrow
+endsnippet
+
+snippet ra " rightarrow ->" i
+\rightarrow
+endsnippet
+
+snippet -> " rightarrow ->" i
+\rightarrow
+endsnippet
+
+snippet rightarrow " rightarrow ->" i
+\rightarrow
+endsnippet
+
+snippet Ra " Rightarrow =>" i
+\Rightarrow
+endsnippet
+
+snippet Rightarrow " Rightarrow =>" i
+\Rightarrow
+endsnippet
+
+snippet rightarrow " Rightarrow =>" i
+\Rightarrow
+endsnippet
+
+snippet leftarrow " leftarrow <-" i
+\leftarrow
+endsnippet
+
+snippet leftarrow " Leftarrow <=" i
+\Leftarrow
+endsnippet
+
+snippet for "forall" i
+\forall 
+endsnippet
+
+snippet notexists "nexists" i
+\nexists
+endsnippet
+
+snippet nexists "nexists" i
+\nexists
+endsnippet
+
+snippet exists "exists" i
+\exists
+endsnippet
+
+snippet subset "subset" w
+\subset 
+endsnippet
+
+snippet inn "in " w
+\in 
+endsnippet
+
+snippet intersection "cap" w
+\cap 
+endsnippet
+
+snippet cap "cap" w
+\cap 
+endsnippet
+
+snippet union "cup" w
+\cup 
+endsnippet
+
+snippet cup "cup" w
+\cup 
+endsnippet
+
+
+
+snippet NN "natural numbers" w
+\mathbb{N}
+endsnippet
+
+snippet naturalnumbers "natural numbers" w
+\mathbb{N}
+endsnippet
+
+snippet QQ "rational numbers" w
+\mathbb{Q}
+endsnippet
+
+snippet rationalnumbers "rational numbers" w
+\mathbb{Q}
+endsnippet
+
+snippet CC "complex numbers" w
+\mathbb{C}
+endsnippet
+
+snippet RR "real numbers" w
+\mathbb{R}
+endsnippet
+
+snippet realnumbers "real numbers" w
+\mathbb{R}
+endsnippet
+
+snippet RRn "real numbers higher dimension" w
+\mathbb{R}^n
+endsnippet
+
+snippet ZZ "integer numbers" w
+\mathbb{Z}
+endsnippet
+
+snippet integers "integer numbers" w
+\mathbb{Z}
+endsnippet
+
+snippet HH "H" w
+\mathbb{H}
+endsnippet
+
+snippet DD "D" w
+\mathbb{D}
+endsnippet
+
+snippet dm "Display Math" w
+$$
+$1.
+$$ $0
+endsnippet
+
+snippet fraction "Fraction" w
+\frac{$1}{$2}$0
+endsnippet
+
+snippet complement "Complement" i
+^{c}
+endsnippet
+
+snippet td "Super Script" i
+^{$1}$0
+endsnippet
+
+snippet uu "subscript" i 
+_{$1}$0
+endsnippet
+
+snippet sqrt "Square Root" wi
+\sqrt{${1:${VISUAL}}}$0
+endsnippet
+
+snippet squareroot "Square Root" wi
+\sqrt{${1:${VISUAL}}}$0
+endsnippet
+
+snippet root "... Root" wi
+\sqrt[$1]{${2:${VISUAL}}}$0
+endsnippet
+
+
+snippet ceil "Ceil" w
+\left\lceil $1 \right\rceil $0
+endsnippet
+
+snippet floor "Floor" w
+\left\lfloor $1 \right\rfloor$0
+endsnippet
+
+snippet pmatrix "Pmat" w
+\begin{pmatrix} $1 \end{pmatrix} $0
+endsnippet
+
+snippet bmatrix "Bmat" w
+\begin{bmatrix} $1 \end{bmatrix} $0
+endsnippet
+
+snippet left "left " i
+\left
+endsnippet
+
+snippet right "right " i
+\right
+endsnippet
+
+snippet lr( "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet leftrightbrackets "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet leftright| "left| right|" i
+\left| ${1:${VISUAL}} \right| $0
+endsnippet
+
+snippet leftright{ "left\{ right\}" i
+\left\\{ ${1:${VISUAL}} \right\\} $0
+endsnippet
+
+
+snippet leftright[ "left[ right]" i
+\left[ ${1:${VISUAL}} \right] $0
+endsnippet
+
+snippet leftright< "leftangle rightangle" wi
+\left<${1:${VISUAL}} \right>$0
+endsnippet
+
+snippet conjugate "conjugate" w
+\overline{$1}$0
+endsnippet
+
+snippet sum "sum" w
+\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
+endsnippet
+
+snippet taylor "taylor" w
+\sum_{${1:k}=${2:0}}^{${3:\infty}} ${4:c_$1} (x-a)^$1 $0
+endsnippet
+
+snippet limit "limit" w
+\lim_{${1:n} \to ${2:\infty}} 
+endsnippet
+
+snippet limsup "limsup" w
+\limsup_{${1:n} \to ${2:\infty}} 
+endsnippet
+
+snippet product "product" w
+\prod_{${1:n=${2:1}}}^{${3:\infty}} ${4:${VISUAL}} $0
+endsnippet
+
+snippet partialderivative "partial" w
+\frac{\partial ${1:V}}{\partial ${2:x}} $0
+endsnippet
+
+snippet derivativepartial "partial" w
+\frac{\partial ${1:V}}{\partial ${2:x}} $0
+endsnippet
+
+snippet derivative "derivative" i
+\frac{d}{d$1}\left($2\right) 
+endsnippet
+
+snippet infty "\infty" w
+\infty
+endsnippet
+
+snippet infinity "\infty" w
+\infty
+endsnippet
+
+snippet ooo "\infty" w
+\infty
+endsnippet
+
+snippet => "Implies" w
+\implies
+endsnippet
+
+snippet =< "Implied by" w
+\impliedby
+endsnippet
+
+snippet lra "left right arrow" w
+\Leftrightarrow
+endsnippet
+
+snippet leftrightrrow "left right arrow" w
+\Leftrightarrow
+endsnippet
+
+snippet leftrightarrow "left right arrow" w
+\Leftrightarrow
+endsnippet
+
+snippet iff "iff" w
+\iff
+endsnippet
+
+snippet == "Equals" w
+&= $1 \\\\
+endsnippet
+
+snippet != "Not Equal" w
+\neq 
+endsnippet
+
+snippet neq "Not Equal" w
+\neq 
+endsnippet
+
+snippet notequal "Not Equal" w
+\neq 
+endsnippet
+
+snippet <= "leq" w
+\le 
+endsnippet
+
+snippet leq "leq" w
+\le 
+endsnippet
+
+snippet lessequal "leq" w
+\le 
+endsnippet
+
+snippet >= "geq" w
+\ge 
+endsnippet
+
+snippet geq "geq" w
+\ge 
+endsnippet
+
+snippet greaterequal "geq" w
+\ge 
+endsnippet
+
+
+snippet lll "l" w
+\ell
+endsnippet
+
+snippet xx "cross" w
+\times 
+endsnippet
+
+snippet bar "bar" wi
+\bar{$1}$0
+endsnippet
+
+snippet acl "Acroynm expanded" bi
+\acl{${1:acronym}}
+endsnippet
+
+snippet acronymlong "Acroynm expanded" bi
+\acl{${1:acronym}}
+endsnippet
+
+snippet ac "Acroynm normal" bi
+\ac{${1:acronym}}
+endsnippet
+
+snippet acronym "Acroynm normal" bi
+\ac{${1:acronym}}
+endsnippet
+
+
+snippet ss "writes double slash" wi
+\\\\
+endsnippet
+
+snippet gitignorelatex "gitignorelatex" wi
+main.aux
+main.bbl
+main.bcf
+main.blg
+main.fdb_latexmk
+main.fls
+main.run.xml 
+main.synctex.gz 
+main.toc 
+main.log
+main.out
+main.nav
+main.snm
+indent.log
+endsnippet
+
+

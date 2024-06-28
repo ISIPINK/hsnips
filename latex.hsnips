@@ -1,0 +1,337 @@
+
+snippet begin "begin{} / end{}" bi
+\begin{$1}
+	${0:${VISUAL}}
+\end{$1}
+endsnippet
+
+
+snippet related "related enviorement" bi
+\begin{related}
+	${0:${VISUAL}}
+\end{related}
+endsnippet
+
+snippet pythoncode "pythoncode" bi
+\begin{pythonn}
+    \pythoncode{$1}
+\end{pythonn}
+endsnippet
+
+snippet juliacode "juliacode" bi
+\juliacode{$0}
+endsnippet
+
+snippet juliacodeenviorement "juliacode enviorement" bi
+\begin{julia}
+    \juliacode{$0}
+\end{julia}
+endsnippet
+
+snippet textcolorblue "textcolorblue" bi
+\textcolor{blue}{$0}
+endsnippet
+
+snippet textcolorred "textcolorred" bi
+\textcolor{red}{$0}
+endsnippet
+
+
+
+snippet equation "equation enviorement" bi
+\begin{equation}
+	${0:${VISUAL}}
+	.
+\end{equation}
+endsnippet
+
+snippet center "Center" bi
+\begin{center}
+	${0:${VISUAL}}
+\end{center}
+endsnippet
+
+snippet desccription "Description" bi
+\begin{description}
+	\item[${1:${VISUAL}}] $0
+\end{description}
+endsnippet
+
+snippet lemma "Lemma" bi
+\begin{lemma}
+	${0:${VISUAL}}
+\end{lemma}
+endsnippet
+
+snippet proposition "Proposition" bi
+\begin{prop}[$1]
+	${0:${VISUAL}}
+\end{prop}
+endsnippet
+
+snippet theorem "Theorem" bi
+\begin{theorem}[$1]
+	${0:${VISUAL}}
+\end{theorem}
+endsnippet
+
+snippet postulate "postulate" bi
+\begin{postulate}[$1]
+	${0:${VISUAL}}
+\end{postulate}
+endsnippet
+
+snippet proof "Proof" bi
+\begin{proof}
+	$1
+\end{proof}
+endsnippet
+
+snippet definition "Definition" bi
+\begin{definition}[$1]
+	${0:${VISUAL}}
+\end{definition}
+endsnippet
+
+snippet note "Note" bi
+\begin{note}[$1]
+	${0:${VISUAL}}
+\end{note}
+endsnippet
+
+snippet problem "Problem" bi
+\begin{problem}[$1]
+	${0:${VISUAL}}
+\end{problem}
+endsnippet
+
+snippet corollary "Corollary" bi
+\begin{corollary}[$1]
+	${0:${VISUAL}}
+\end{corollary}
+endsnippet
+
+snippet example "Example" bi
+\begin{example}[$1]
+	${0:${VISUAL}}
+\end{example}
+endsnippet
+
+snippet notation "Notation" bi
+\begin{notation}[$1]
+	$0${VISUAL}
+\end{notation}
+endsnippet
+
+snippet conclusion "Conclusion" bi
+\begin{conclusion}[$1]
+	$0${VISUAL}
+\end{conclusion}
+endsnippet
+
+snippet figure "Figure environment" bi
+\begin{figure}[${1:htpb}]
+	\centering
+	${2:\includegraphics[width=0.8\textwidth]{$3}}
+	\caption{${4:$3}}
+	\label{fig:${5:${3/\W+/-/g}}}
+\end{figure}
+endsnippet
+
+snippet enumerate "Enumerate" bi
+\begin{enumerate}
+	\item ${0:${VISUAL}}
+\end{enumerate}
+endsnippet
+
+snippet frame "fram" bi
+\begin{frame}
+	$0
+\end{frame}
+endsnippet
+
+snippet frametitle "frametitle" bi
+\frametitle{$0}
+endsnippet
+
+
+snippet itemize "Itemize" bi
+\begin{itemize}
+	\item ${0:${VISUAL}}
+\end{itemize}
+endsnippet
+
+snippet item "item" b
+\item 
+endsnippet
+
+snippet newpage "newpage" b
+\newpage
+endsnippet
+
+snippet action "action" b
+\action<+->{$0} 
+endsnippet
+
+snippet cases "cases" bi
+\begin{cases}
+	${0:${VISUAL}}
+\end{cases}
+endsnippet
+
+
+snippet abstract "abstract environment" b
+\begin{abstract}
+	${0:${VISUAL}}
+.\end{abstract}
+endsnippet
+
+snippet tabular "tabular / array environment" b
+	\begin{${1:t}${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}{${2:c}}
+	$0${2/(?<=.)(c|l|r)|./(?1: & )/g}
+	\end{$1${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}
+endsnippet
+
+snippet table "Table environment" b
+\begin{table}[${1:htpb}]
+	\centering
+	\caption{${2:caption}}
+	\label{tab:${3:label}}
+
+	\begin{${4:t}${4/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}{${5:c}}
+		$0${5/(?<=.)(c|l|r)|./(?1: & )/g}
+	\end{$4${4/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}
+\end{table}
+endsnippet
+
+snippet pause "pause" i
+\pause
+endsnippet
+
+snippet vspace "vspace" i
+\vspace{$1}
+endsnippet
+
+snippet hspace "hspace" i
+\hspace{$1}
+endsnippet
+
+snippet pac "Package" b
+\usepackage[${1:options}]{${2:package}}$0
+endsnippet
+
+snippet documentclass "Document Class" bA
+\documentclass{$1}$0
+endsnippet
+
+snippet template "Template"
+\documentclass[a4paper,12pt]{article}
+
+\setlength{\textwidth}{15.0cm}
+\setlength{\textheight}{24.0cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headsep}{0cm}
+\setlength{\headheight}{0cm}
+\pagestyle{plain}
+
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+		$0
+\end{document}
+endsnippet
+
+snippet templatebeamer "Templatebeamer"
+\documentclass[20pt,aspectratio=149]{beamer}
+\usepackage[]{bookmark}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{sansmathaccent}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage[style=authoryear,backend=biber]{biblatex}
+
+\addbibresource{bibliography.bib} 
+\pdfmapfile{+sansmathaccent.map}
+
+\title{title}
+\author{author}
+\usetheme{Madrid}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+\end{document}
+endsnippet
+
+
+
+
+
+
+snippet oefening "oefening" b
+\oefening{${1:oefening nummer}}
+endsnippet
+
+snippet suboefening "oefening" b
+\suboefening{${1:suboefening nummer}}
+endsnippet
+
+snippet chapter "Chapter" wi
+\chapter{$1${VISUAL}}
+endsnippet
+
+snippet section "Section" wi
+\section{$1${VISUAL}}
+endsnippet
+
+snippet section* "Section* without numbering" wi
+\section*{$1${VISUAL}}
+endsnippet
+
+snippet subsection "Subsection" wi
+\subsection{$1${VISUAL}}
+endsnippet
+
+snippet subsection* "Subsection* without numbering" wi
+\subsection*{$1${VISUAL}}
+endsnippet
+
+snippet subsubsection "Subsection" wi
+\subsubsection{$1${VISUAL}}
+endsnippet
+
+snippet subsubsection* "Subsubsection* withoutnumbering" wi
+\subsubsection*{$1${VISUAL}}
+endsnippet
+
+snippet paragraph "Paragraph" wi
+\paragraph{$1${VISUAL}}
+endsnippet
+
+snippet paragraph* "Paragraph* without numbering" wi
+\paragraph*{$1${VISUAL}}
+endsnippet
+
+snippet subparagraph "Sub Paragraph" wi
+\subparagraph{$1${VISUAL}}
+endsnippet
+
+snippet subparagraph* "Sub Paragraph* without numbering" wi
+\subparagraph*{$1${VISUAL}}
+endsnippet
