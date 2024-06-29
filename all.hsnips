@@ -1,3 +1,10 @@
+snippet juliacodeblock "Julia code block" b
+\`\`\`julia
+$1
+\`\`\`
+endsnippet
+
+
 snippet pythoncomment "python fun comment" i
 """short description
 
