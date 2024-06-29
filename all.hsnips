@@ -1,7 +1,7 @@
 snippet juliacodeblock "Julia code block" b
-\`\`\`julia
+```julia
 $1
-\`\`\`
+```
 endsnippet
 
 
